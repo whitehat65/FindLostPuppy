@@ -34,7 +34,7 @@ public class FindLostPuppy {
         } while ((object[0] == player1[0] && object[1] == player1[1]) ||
                 (object[0] == player2[0] && object[1] == player2[1]));
 
-        building[object[0]][object[1]] = 'P';
+        building[object[0]][object[1]] = '*';
 
         boolean gameWon = false;
 
@@ -163,7 +163,7 @@ public class FindLostPuppy {
                 } else if (i == player2[0] && j == player2[1]) {
                     System.out.print("|2 ");
                 } else if (i == object[0] && j == object[1]) {
-                    System.out.print("|P ");
+                    System.out.print("|* ");
                 } else {
                     System.out.print("|  ");
                 }
